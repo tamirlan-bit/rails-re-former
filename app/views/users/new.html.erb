@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up Form</title>
+  </head>
+<body>
+  <div class="left">
+    <div class="logo">      
+      <%= image_tag "logo.png", alt: "Odin-Logo", class: "logo-img" %>
+      <span> Start the Journey </span>
+    </div>
+  <p class="bg-credits">Photo by <a href="https://unsplash.com/photos/mountains-near-body-of-water-4ThcC1DtspE">André Filipe</a> on Unsplash</p>
+  </div>
+  <div class="right">
+    <div class="upper">
+    <h2>Unlock the Open Road in Iceland</h2>
+    <p class="before_form">
+      Iceland isn’t a vacation—it’s an epic waiting to happen.
+      Behind the wheel, you’re not just driving; 
+      you’re chasing waterfalls, circling volcanoes, and waving at sheep that definitely judge your parking skills.
+      A rental car here is more than four wheels—it’s your ticket to write your own Viking saga on the open road.
+    </p>
+    </div>
+
+  <div class="middle">
+  <form id="signup-form">
+    <h4>Sign Up & Hit the Road</h4>
+    <div class="form-field">
+      <label for="first_name">First Name</label>
+      <input type="text" placeholder="John" id="first_name" name="first_name" />
+    </div>
+
+    <div class="form-field">
+      <label for="last_name">Last Name</label>
+      <input type="text" placeholder="Doe" id="last_name" name="last_name" />
+    </div>
+
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input type="email" placeholder="jondoe@example.com" id="email" name="email" />
+    </div>
+
+    <div class="form-field">
+      <label for="number">Phone Number</label>
+      <input type="tel" placeholder="+1234567890" id="number" name="number" />
+    </div>
+
+    <div class="form-field">
+      <label for="password">Password</label>
+      <input type="password" placeholder="• • • • • • •" id="password" minlength="8" required />
+    </div>
+
+    <div class="form-field">
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" placeholder="• • • • • • •" id="confirm_password" minlength="8" required />
+    </div>
+  </div>
+    <div class="lower">
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </form>
+
+</body>
+</html>
